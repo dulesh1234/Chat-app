@@ -23,7 +23,7 @@ mongoose
   });
 
 app.get("/get-mongoUrl",(req,res)=>{
-  res.json({MONGO_URL:process.evn.MONGO_URL,name:"dulesh"})
+  res.json({"MONGO_URL":process.evn.MONGO_URL,"name":"dulesh"})
 })
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
